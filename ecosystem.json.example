@@ -1,0 +1,5 @@
+{
+	"reverb_app_key": "your-app-key",
+	"reverb_ws_protocol": "wss",
+	"reverb_host": "localhost:8080"
+}

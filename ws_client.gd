@@ -5,8 +5,10 @@ var connected = false
 
 func _ready():
 	var app_key = getVar('reverb_app_key')
+	var protocol = getVar('reverb_ws_protocol')
+	var host = getVar('reverb_host')
 	# Connect to Laravel Reverb WebSocket server
-	var url = "ws://localhost:8080/app/"+app_key
+	var url = protocol+"://"+host+"/app/"+app_key
 	var error = socket.connect_to_url(url)
 	
 	if error != OK:
